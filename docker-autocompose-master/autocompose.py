@@ -172,7 +172,7 @@ def generate(cname, createvolumes=False):
     #добавляем считку  поля placement constraints - node.role == manager
     print("------------------------------")
     print("вывод Placement-constraints    c.services.get(cid).Placement")                     #!!! moiseev
-    print(c.services.get(cid).constraints)
+    print(c.services.get(cid).placement.constraints)
     print("------------------------------")
 #----------------------------------------------------------------------------------------
 
