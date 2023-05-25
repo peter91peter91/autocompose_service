@@ -153,6 +153,10 @@ def generate(cname, createvolumes=False):
 
 #----------------------------------------------------------------------------------------
     print("------------------------------")
+    print("вывод  c.services")
+    print( c.services)
+    print("------------------------------")
+    print("------------------------------")
     print("вывод cattrs")                     #!!! moiseev
     print(cattrs)
 
@@ -171,11 +175,13 @@ def generate(cname, createvolumes=False):
     print("------------------------------")
     #добавляем считку  поля placement constraints - node.role == manager
     print("------------------------------")
-    print("вывод Placement-constraints    c.services.get(cid).Placement")                     #!!! moiseev
+    print("вывод placement-constraints      print(cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {}))")                     #!!! moiseev
     print(cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {}))
     print("------------------------------")
 #----------------------------------------------------------------------------------------
-
+#пытаемся вывести список сервисов. Парами Имя сервиса - его айди
+    print("------------------------------")
+    print("------------------------------")
 
 
     # Build yaml dict structure
