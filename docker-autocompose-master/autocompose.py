@@ -175,7 +175,7 @@ def generate(cname, createvolumes=False):
     print("------------------------------")
     #добавляем считку  поля placement constraints - node.role == manager
     print("------------------------------")
-    print("вывод placement-constraints      print(cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {}))")                     #!!! moiseev
+    print("вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})")                     #!!! moiseev
     print(cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {}))
     print("------------------------------")
 #----------------------------------------------------------------------------------------
