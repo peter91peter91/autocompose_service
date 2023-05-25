@@ -155,6 +155,7 @@ def generate(cname, createvolumes=False):
     print("------------------------------")
     print("вывод cattrs")                     #!!! moiseev
     print(cattrs)
+
     print("------------------------------")
     print("вывод services")                  #!!! moiseev
     print(c.services.list())
@@ -167,6 +168,11 @@ def generate(cname, createvolumes=False):
     print("------------------------------")
     print("вывод c.services.get(cid).name")   #!!! moiseev
     print(c.services.get(cid).name)
+    print("------------------------------")
+    #добавляем считку  поля placement constraints - node.role == manager
+    print("------------------------------")
+    print("вывод cname")                     #!!! moiseev
+    print(c.services.get(cid).Placement)
     print("------------------------------")
 #----------------------------------------------------------------------------------------
 
